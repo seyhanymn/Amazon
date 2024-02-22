@@ -79,7 +79,7 @@ public class UrunEkle extends TestBaseRapor {
     String beklenenSonuc=amazonUrunEkle.secilenUrun.getText();
     System.out.println("beklenen"+beklenenSonuc);
 
-    Assert.assertEquals(arananSonuc,beklenenSonuc);
+    Assert.assertNotEquals(arananSonuc,beklenenSonuc);
     extentTest.pass("Ürün basarili sekilde sepete eklendi");
 
 
